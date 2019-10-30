@@ -53,16 +53,16 @@ function mostrarResultado() {
 
     if (suma.checked = true) {
         nodoResultado.className = (`valido`)
-        nodoResultado.innerText = `El resultado de ${primerNumero} + ${segundoNumero} es igual a ${calculoSuma}`
+        nodoResultado.innerText = `${primerNumero} + ${segundoNumero} = ${calculoSuma}`
     } else if (resta.checked = true) {
         nodoResultado.className = (`valido`)
-        nodoResultado.innerText = `El resultado de ${primerNumero} - ${segundoNumero} es igual a ${calculoResta}`
+        nodoResultado.innerText = `${primerNumero} - ${segundoNumero} = ${calculoResta}`
     } else if (multiplicacion.checked = true) {
         nodoResultado.className = (`valido`)
-        nodoResultado.innerText = `El resultado de ${primerNumero} * ${segundoNumero} es igual a ${calculoMultiplicacion}`
+        nodoResultado.innerText = `${primerNumero} * ${segundoNumero} = ${calculoMultiplicacion}`
     } else if (division.checked = true) {
         nodoResultado.className = (`valido`)
-        nodoResultado.innerText = `El resultado de ${primerNumero} / ${segundoNumero} es igual a ${calculoDivision}`
+        nodoResultado.innerText = `${primerNumero} / ${segundoNumero} = ${calculoDivision}`
     } else {
         nodoResultado.className = (`error`)
         nodoResultado.innerText = `Completa los campos correctamente`
