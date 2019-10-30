@@ -29,16 +29,16 @@ function mostrarResultado() {
     let calculoMultiplicacion = multiplicar(primerNumero, segundoNumero)
     let calculoDivision = dividir(primerNumero, segundoNumero)
 
-    if (suma.checked = true) {
+    if (suma.checked) {
         nodoResultado.className = (`valido`)
         nodoResultado.innerText = `${primerNumero} + ${segundoNumero} = ${calculoSuma}`
-    } else if (resta.checked = true) {
+    } else if (resta.checked) {
         nodoResultado.className = (`valido`)
         nodoResultado.innerText = `${primerNumero} - ${segundoNumero} = ${calculoResta}`
-    } else if (multiplicacion.checked = true) {
+    } else if (multiplicacion.checked) {
         nodoResultado.className = (`valido`)
         nodoResultado.innerText = `${primerNumero} * ${segundoNumero} = ${calculoMultiplicacion}`
-    } else if (division.checked = true) {
+    } else if (division.checked) {
         nodoResultado.className = (`valido`)
         nodoResultado.innerText = `${primerNumero} / ${segundoNumero} = ${calculoDivision}`
     } else {
@@ -52,14 +52,6 @@ function reiniciarResultado() {
     nodoResultado.className = (``)
     nodoResultado.innerText = ``
 }
-
-let suma = document.querySelector(`#suma`)
-let resta = document.querySelector(`#resta`)
-let multiplicacion = document.querySelector(`#multiplicacion`)
-let division = document.querySelector(`#division`)
-let primerNumero = document.querySelector(`#primerNumero`).value
-let segundoNumero = document.querySelector(`#segundoNumero`).value
-let resultado = document.querySelector(`#resultado`)
 
 document.querySelector(`#calcular`).onclick = function () {
     mostrarResultado()
