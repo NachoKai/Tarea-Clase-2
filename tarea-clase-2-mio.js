@@ -15,48 +15,48 @@ function dividir(primerNumero, segundoNumero) {
 }
 
 function mostrarResultado() {
-    let $primerNumero = document.querySelector(`#primerNumero`)
+    let $primerNumero = document.querySelector('#primer-numero')
     let primerNumero = Number($primerNumero.value)
-    let $segundoNumero = document.querySelector(`#segundoNumero`)
+    let $segundoNumero = document.querySelector('#segundo-numero')
     let segundoNumero = Number($segundoNumero.value)
-    let nodoResultado = document.querySelector(`#resultado`)
-    let suma = document.querySelector(`#suma`)
-    let resta = document.querySelector(`#resta`)
-    let multiplicacion = document.querySelector(`#multiplicacion`)
-    let division = document.querySelector(`#division`)
+    let nodoResultado = document.querySelector('#resultado')
+    let suma = document.querySelector('#suma')
+    let resta = document.querySelector('#resta')
+    let multiplicacion = document.querySelector('#multiplicacion')
+    let division = document.querySelector('#division')
     let calculoSuma = sumar(primerNumero, segundoNumero)
     let calculoResta = restar(primerNumero, segundoNumero)
     let calculoMultiplicacion = multiplicar(primerNumero, segundoNumero)
     let calculoDivision = dividir(primerNumero, segundoNumero)
 
     if (suma.checked) {
-        nodoResultado.className = (`valido`)
+        nodoResultado.className = ('valido')
         nodoResultado.innerText = `${primerNumero} + ${segundoNumero} = ${calculoSuma}`
     } else if (resta.checked) {
-        nodoResultado.className = (`valido`)
+        nodoResultado.className = ('valido')
         nodoResultado.innerText = `${primerNumero} - ${segundoNumero} = ${calculoResta}`
     } else if (multiplicacion.checked) {
-        nodoResultado.className = (`valido`)
+        nodoResultado.className = ('valido')
         nodoResultado.innerText = `${primerNumero} * ${segundoNumero} = ${calculoMultiplicacion}`
     } else if (division.checked) {
-        nodoResultado.className = (`valido`)
+        nodoResultado.className = ('valido')
         nodoResultado.innerText = `${primerNumero} / ${segundoNumero} = ${calculoDivision}`
     } else {
-        nodoResultado.className = (`error`)
-        nodoResultado.innerText = `Completa los campos correctamente`
+        nodoResultado.className = ('error')
+        nodoResultado.innerText = 'Completa los campos correctamente'
     }
 }
 
 function reiniciarResultado() {
-    let nodoResultado = document.querySelector(`#resultado`)
-    nodoResultado.className = (``)
-    nodoResultado.innerText = ``
+    let nodoResultado = document.querySelector('#resultado')
+    nodoResultado.className = ('')
+    nodoResultado.innerText = ''
 }
 
-document.querySelector(`#calcular`).onclick = function () {
+document.querySelector('#calcular').onclick = function () {
     mostrarResultado()
 }
 
-document.querySelector(`#reset`).onclick = function () {
+document.querySelector('#reset').onclick = function () {
     reiniciarResultado()
 }
