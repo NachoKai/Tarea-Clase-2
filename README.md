@@ -1,4 +1,4 @@
-# Tarea-Clase-2  
+# Calculadora Simple
 r/argentina programa
   
 ## [Entrar](https://nachokai.github.io/Tarea-Clase-2/)  
