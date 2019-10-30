@@ -1,39 +1,17 @@
 function sumar(primerNumero, segundoNumero) {
-    return primerNumero + segundoNumero;
+    return primerNumero + segundoNumero
 }
 
 function restar(primerNumero, segundoNumero) {
-    return primerNumero - segundoNumero;
+    return primerNumero - segundoNumero
 }
 
 function multiplicar(primerNumero, segundoNumero) {
-    return primerNumero * segundoNumero;
+    return primerNumero * segundoNumero
 }
 
 function dividir(primerNumero, segundoNumero) {
-    return primerNumero / segundoNumero;
-}
-
-function reiniciarResultado() {
-    let nodoResultado = document.querySelector(`#resultado`)
-    nodoResultado.className = (``)
-    nodoResultado.innerText = ``
-}
-
-let suma = document.querySelector(`#suma`)
-let resta = document.querySelector(`#resta`)
-let multiplicacion = document.querySelector(`#multiplicacion`)
-let division = document.querySelector(`#division`)
-let primerNumero = document.querySelector(`#primerNumero`).value
-let segundoNumero = document.querySelector(`#segundoNumero`).value
-let resultado = document.querySelector(`#resultado`)
-
-document.querySelector(`#calcular`).onclick = function () {
-    mostrarResultado()
-}
-
-document.querySelector(`#reset`).onclick = function () {
-    reiniciarResultado()
+    return primerNumero / segundoNumero
 }
 
 function mostrarResultado() {
@@ -67,4 +45,26 @@ function mostrarResultado() {
         nodoResultado.className = (`error`)
         nodoResultado.innerText = `Completa los campos correctamente`
     }
+}
+
+function reiniciarResultado() {
+    let nodoResultado = document.querySelector(`#resultado`)
+    nodoResultado.className = (``)
+    nodoResultado.innerText = ``
+}
+
+let suma = document.querySelector(`#suma`)
+let resta = document.querySelector(`#resta`)
+let multiplicacion = document.querySelector(`#multiplicacion`)
+let division = document.querySelector(`#division`)
+let primerNumero = document.querySelector(`#primerNumero`).value
+let segundoNumero = document.querySelector(`#segundoNumero`).value
+let resultado = document.querySelector(`#resultado`)
+
+document.querySelector(`#calcular`).onclick = function () {
+    mostrarResultado()
+}
+
+document.querySelector(`#reset`).onclick = function () {
+    reiniciarResultado()
 }
