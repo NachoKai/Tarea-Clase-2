@@ -10,6 +10,6 @@ _______________________________________
 # Simple Calculator
 r/argentina programa
   
-### [Enter](https://nachokai.github.io/Tarea-Clase-2/)
+## [Enter](https://nachokai.github.io/Tarea-Clase-2/)
 
 ### Based on an introductory JavaScript workshop for beginners: https://github.com/muses-code-js/js-intro-workshop, by MusesCodeJS and her author Tanya Butenko.
