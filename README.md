@@ -1,5 +1,5 @@
 # Calculadora Simple
-r/argentina programa
+r/argentina Programa por Fabricio Sodano
   
 ## [Entrar](https://nachokai.github.io/Tarea-Clase-2/)  
 
@@ -8,7 +8,7 @@ r/argentina programa
 _______________________________________
 
 # Simple Calculator
-r/argentina programa
+r/argentina Programa by Fabricio Sodano
   
 ## [Enter](https://nachokai.github.io/Tarea-Clase-2/)
 
