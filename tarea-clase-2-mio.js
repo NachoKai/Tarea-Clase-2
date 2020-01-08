@@ -1,18 +1,7 @@
-function sumar(primerNumero, segundoNumero) {
-    return primerNumero + segundoNumero
-}
-
-function restar(primerNumero, segundoNumero) {
-    return primerNumero - segundoNumero
-}
-
-function multiplicar(primerNumero, segundoNumero) {
-    return primerNumero * segundoNumero
-}
-
-function dividir(primerNumero, segundoNumero) {
-    return primerNumero / segundoNumero
-}
+sumar = (primerNumero, segundoNumero) => primerNumero + segundoNumero
+restar = (primerNumero, segundoNumero) => primerNumero - segundoNumero
+multiplicar = (primerNumero, segundoNumero) => primerNumero * segundoNumero
+dividir = (primerNumero, segundoNumero) => primerNumero / segundoNumero
 
 function mostrarResultado() {
     let $primerNumero = document.querySelector('#primer-numero')
@@ -53,10 +42,5 @@ function reiniciarResultado() {
     nodoResultado.innerText = ''
 }
 
-document.querySelector('#calcular').onclick = function () {
-    mostrarResultado()
-}
-
-document.querySelector('#reset').onclick = function () {
-    reiniciarResultado()
-}
+document.querySelector('#calcular').onclick = () => mostrarResultado()
+document.querySelector('#reset').onclick = () => reiniciarResultado()
