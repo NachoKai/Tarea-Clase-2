@@ -1,46 +1,46 @@
-sumar = (primerNumero, segundoNumero) => primerNumero + segundoNumero
-restar = (primerNumero, segundoNumero) => primerNumero - segundoNumero
-multiplicar = (primerNumero, segundoNumero) => primerNumero * segundoNumero
-dividir = (primerNumero, segundoNumero) => primerNumero / segundoNumero
+const sumar = (primerNumero, segundoNumero) => primerNumero + segundoNumero;
+const restar = (primerNumero, segundoNumero) => primerNumero - segundoNumero;
+const multiplicar = (primerNumero, segundoNumero) => primerNumero * segundoNumero;
+const dividir = (primerNumero, segundoNumero) => primerNumero / segundoNumero;
 
 function mostrarResultado() {
-    let $primerNumero = document.querySelector('#primer-numero')
-    let primerNumero = Number($primerNumero.value)
-    let $segundoNumero = document.querySelector('#segundo-numero')
-    let segundoNumero = Number($segundoNumero.value)
-    let nodoResultado = document.querySelector('#resultado')
-    let suma = document.querySelector('#suma')
-    let resta = document.querySelector('#resta')
-    let multiplicacion = document.querySelector('#multiplicacion')
-    let division = document.querySelector('#division')
-    let calculoSuma = sumar(primerNumero, segundoNumero)
-    let calculoResta = restar(primerNumero, segundoNumero)
-    let calculoMultiplicacion = multiplicar(primerNumero, segundoNumero)
-    let calculoDivision = dividir(primerNumero, segundoNumero)
+  const $primerNumero = document.querySelector("#primer-numero");
+  const primerNumero = Number($primerNumero.value);
+  const $segundoNumero = document.querySelector("#segundo-numero");
+  const segundoNumero = Number($segundoNumero.value);
+  const nodoResultado = document.querySelector("#resultado");
+  const suma = document.querySelector("#suma");
+  const resta = document.querySelector("#resta");
+  const multiplicacion = document.querySelector("#multiplicacion");
+  const division = document.querySelector("#division");
+  const calculoSuma = sumar(primerNumero, segundoNumero);
+  const calculoResta = restar(primerNumero, segundoNumero);
+  const calculoMultiplicacion = multiplicar(primerNumero, segundoNumero);
+  const calculoDivision = dividir(primerNumero, segundoNumero);
 
-    if (suma.checked) {
-        nodoResultado.className = ('valido')
-        nodoResultado.innerText = `${primerNumero} + ${segundoNumero} = ${calculoSuma}`
-    } else if (resta.checked) {
-        nodoResultado.className = ('valido')
-        nodoResultado.innerText = `${primerNumero} - ${segundoNumero} = ${calculoResta}`
-    } else if (multiplicacion.checked) {
-        nodoResultado.className = ('valido')
-        nodoResultado.innerText = `${primerNumero} * ${segundoNumero} = ${calculoMultiplicacion}`
-    } else if (division.checked) {
-        nodoResultado.className = ('valido')
-        nodoResultado.innerText = `${primerNumero} / ${segundoNumero} = ${calculoDivision}`
-    } else {
-        nodoResultado.className = ('error')
-        nodoResultado.innerText = 'Completa los campos correctamente'
-    }
+  if (suma.checked) {
+    nodoResultado.className = "valido";
+    nodoResultado.innerText = `${primerNumero} + ${segundoNumero} = ${calculoSuma}`;
+  } else if (resta.checked) {
+    nodoResultado.className = "valido";
+    nodoResultado.innerText = `${primerNumero} - ${segundoNumero} = ${calculoResta}`;
+  } else if (multiplicacion.checked) {
+    nodoResultado.className = "valido";
+    nodoResultado.innerText = `${primerNumero} * ${segundoNumero} = ${calculoMultiplicacion}`;
+  } else if (division.checked) {
+    nodoResultado.className = "valido";
+    nodoResultado.innerText = `${primerNumero} / ${segundoNumero} = ${calculoDivision}`;
+  } else {
+    nodoResultado.className = "error";
+    nodoResultado.innerText = "Completa los campos correctamente";
+  }
 }
 
 function reiniciarResultado() {
-    let nodoResultado = document.querySelector('#resultado')
-    nodoResultado.className = ('')
-    nodoResultado.innerText = ''
+  const nodoResultado = document.querySelector("#resultado");
+  nodoResultado.className = "";
+  nodoResultado.innerText = "";
 }
 
-document.querySelector('#calcular').onclick = () => mostrarResultado()
-document.querySelector('#reset').onclick = () => reiniciarResultado()
+document.querySelector("#calcular").onclick = () => mostrarResultado();
+document.querySelector("#reset").onclick = () => reiniciarResultado();
